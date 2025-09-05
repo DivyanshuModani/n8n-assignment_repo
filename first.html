@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BigStep Chat Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Overlay form (Name + Email) https://divyanshuser.app.n8n.cloud/webhook-test/99851730-f313-4ad5-a274-036e3422614e-->
+  <div class="overlay" id="overlay">
+    <form class="form" id="userForm">
+      <h3>Enter Details</h3>
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <button type="submit" id="startBtn">Start Chat</button>
+    </form>
+  </div>
+
+  <!-- Chat Container -->
+  <div class="chat-container" style="display:none;" id="chatContainer">
+    <div class="header">BigStep Employee Assistant</div>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type your question..." />
+      <button type="button" id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
